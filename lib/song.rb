@@ -54,6 +54,8 @@ class Song
     data[1].delete!".mp3"
     song.name = data[1]
     song.artist_name = data[0]
+    
+    song
   end
 
 end

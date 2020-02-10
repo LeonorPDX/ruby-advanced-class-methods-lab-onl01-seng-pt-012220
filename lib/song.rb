@@ -59,4 +59,18 @@ class Song
     song
   end
 
+  def self.create_from_filename(filename)
+    song = self.new
+    
+    data = filename.split(" - ")
+    data[1].delete_suffix!".mp3"
+    song.name = data[1]
+    song.artist_name = data[0]
+    
+    Song.all << song
+    
+    song
+  end
+
+
 end

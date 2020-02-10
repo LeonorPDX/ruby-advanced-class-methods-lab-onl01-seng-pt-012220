@@ -52,7 +52,7 @@ class Song
     song = self.new
     
     data = filename.split(" - ")
-    data[1].delete!".mp3"
+    data[1].delete!'.mp3'
     song.name = data[1]
     song.artist_name = data[0]
     

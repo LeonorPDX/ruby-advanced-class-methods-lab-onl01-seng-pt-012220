@@ -55,8 +55,6 @@ class Song
     data[1].delete_suffix!".mp3"
     song.name = data[1]
     song.artist_name = data[0]
-    
-    song
   end
 
 end
